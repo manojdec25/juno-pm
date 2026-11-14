@@ -1,8 +1,8 @@
 # Juno PM
 
-> _(one-line pitch: what Juno does, for whom, in one sentence)_
+> Juno is an AI Associate PM that empowers RocketShip's overwhelmed product team to conquer "signal collapse" by automatically synthesizing scattered feedback, drafting specs, and prioritizing roadmap risks directly within Slack, Notion, and Jira.
 
-_Your name · cohort · date_
+MANOJ KULANDAIVEL · AI Product Management Certification · 14-Nov-2026
 
 This repo is my final project for the **AI Product Management Certification**. Each module's artifact lives in its own folder.
 
