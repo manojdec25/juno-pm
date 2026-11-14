@@ -13,7 +13,7 @@ Analyze raw Slack conversation transcripts between RocketShip product managers a
 *   Immediately flag and hand off to a human PM if a request involves contracts, legal, SLA penalties, or compliance.
 
 **Format:**
-Output a structured Markdown table that is downloadable as .md file. State findings directly with no introductory filler sentences before the table. Use the following exact columns:
+Output a structured Markdown table that is downloadable as .md file and a pretty html file.  State findings directly with no introductory filler sentences before the table. Use the following exact columns:
 *   Ticket Type (Bug, Improvement, New Feature)
 *   Priority (P0, P1, P2)
 *   Ticket Title (Clear and concise; or "NEEDS CLARIFICATION")
