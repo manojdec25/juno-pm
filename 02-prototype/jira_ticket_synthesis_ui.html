@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juno PM: Ticket Synthesis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 p-8 font-sans">
+    <div class="max-w-7xl mx-auto bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="px-6 py-5 border-b border-slate-200 bg-slate-100 flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-semibold text-slate-800">Juno PM: Slack-to-Jira Synthesis</h1>
+                <p class="text-sm text-slate-500 mt-1">Source: #ext-acme-rocketship</p>
+            </div>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-md text-xs font-medium bg-indigo-100 text-indigo-700">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Auto-Synthesized
+            </span>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr class="bg-slate-50 border-b border-slate-200 text-xs uppercase tracking-wider text-slate-500">
+                        <th class="px-6 py-4 font-medium">Ticket Type</th>
+                        <th class="px-6 py-4 font-medium">Priority</th>
+                        <th class="px-6 py-4 font-medium">Ticket Title</th>
+                        <th class="px-6 py-4 font-medium w-1/3">Actionable Description</th>
+                        <th class="px-6 py-4 font-medium w-1/3">Source Signal & Citation</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-200 text-sm">
+                    <!-- Row 1 -->
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Bug</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="font-bold text-red-600">P0</span>
+                        </td>
+                        <td class="px-6 py-4 font-medium text-slate-900">Fix silent failure and missing alert for Snowflake ingestion job #4459</td>
+                        <td class="px-6 py-4 text-slate-600">Investigate and resolve root cause of silent failure for job #4459 to unblock 1 PM board meeting. Patch RocketShip monitoring UI to ensure alert fires correctly for this failure state.</td>
+                        <td class="px-6 py-4 text-slate-500 text-xs italic">"@alex_acme [10:01 AM]: The Snowflake ingestion job (ID #4459) failed silently at 3 AM. No alert fired... We have a board meeting at 1 PM and are completely blocked."</td>
+                    </tr>
+                    <!-- Row 2 -->
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">Improvement</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="font-semibold text-slate-600">P2</span>
+                        </td>
+                        <td class="px-6 py-4 font-medium text-slate-900">Optimize horizontal scrolling performance in data preview for >50 columns</td>
+                        <td class="px-6 py-4 text-slate-600">Refactor the data preview window to prevent the browser tab from freezing for 10 seconds when horizontally scrolling wide tables. Priority is P2 because the customer has a viable workaround (writing custom SQL).</td>
+                        <td class="px-6 py-4 text-slate-500 text-xs italic">"@david_acme [10:15 AM]: ...When I load a table with more than 50 columns, the horizontal scrolling gets incredibly janky and sometimes freezes my Chrome tab for like 10 seconds. It's annoying, but we can work around it..."</td>
+                    </tr>
+                    <!-- Row 3 -->
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800">New Feature</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="font-semibold text-orange-500">P1</span>
+                        </td>
+                        <td class="px-6 py-4 font-medium text-slate-900">Implement row-level Role-Based Access Control (RBAC)</td>
+                        <td class="px-6 py-4 text-slate-600">Scope and build row-level RBAC permissions. Priority is P1 because the lack of this capability is a hard compliance blocker that will prevent the customer from migrating HR datasets in Q3.</td>
+                        <td class="px-6 py-4 text-slate-500 text-xs italic">"@alex_acme [10:22 AM]: ...we absolutely need role-based access control (RBAC) at the row level... internal compliance team says we cannot migrate the HR datasets onto RocketShip."</td>
+                    </tr>
+                    <!-- Row 4 -->
+                    <tr class="hover:bg-slate-50 transition-colors bg-yellow-50/30">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Bug</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="font-semibold text-slate-600">P2</span>
+                        </td>
+                        <td class="px-6 py-4 font-bold text-yellow-700">NEEDS CLARIFICATION</td>
+                        <td class="px-6 py-4 text-slate-600">The customer reported that an "export thing" is not functioning as expected. The human PM needs to follow up to identify the specific feature, the expected behavior, and the actual error before engineering work can be scoped.</td>
+                        <td class="px-6 py-4 text-slate-500 text-xs italic">"@david_acme [10:30 AM]: ...what happened to the export thing we talked about on the sync last week? It is not doing what we expected when we click it."</td>
+                    </tr>
+                    <!-- Row 5 -->
+                    <tr class="hover:bg-slate-50 transition-colors bg-red-50">
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800">Bug</span>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            <span class="font-bold text-red-600">P0</span>
+                        </td>
+                        <td class="px-6 py-4 font-bold text-red-700">⚠️ HUMAN PM HAND-OFF: Custom SLA Penalty Addendum Request</td>
+                        <td class="px-6 py-4 text-slate-800"><span class="font-semibold text-red-600">DO NOT AUTOMATE.</span> Procurement is requesting a revised contract with a custom SLA penalty addendum by EOD due to recent downtimes. The human PM must immediately engage Legal and Sales.</td>
+                        <td class="px-6 py-4 text-slate-500 text-xs italic">"@alex_acme [10:35 AM]: ...our procurement team flagged that the upcoming renewal needs a custom SLA penalty addendum... Can you draft up a revised contract with the new SLA terms and send it over by EOD?"</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
